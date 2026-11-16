@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Life Choices Academy Gallery</h1>
+        <p>Explore our collection of landscapes, portraits, and architecture.</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+        <button class="filter-btn" data-filter="portraits">Portraits</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </div>
+
+    <!-- Image Grid (12 items) -->
+    <main class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-card" data-category="landscapes">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/10/600/400" alt="Mountain Landscape">
+                <div class="card-overlay">
+                    <p>A serene view of misty mountains at sunrise.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Misty Peaks</h3>
+                <span class="category-tag">Landscapes</span>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-card" data-category="portraits">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/64/600/400" alt="Studio Portrait">
+                <div class="card-overlay">
+                    <p>Professional studio portrait with dramatic lighting.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Studio Glance</h3>
+                <span class="category-tag">Portraits</span>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-card" data-category="architecture">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/122/600/400" alt="Modern Architecture">
+                <div class="card-overlay">
+                    <p>Sleek lines of modern urban architecture.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Urban Geometry</h3>
+                <span class="category-tag">Architecture</span>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-card" data-category="landscapes">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/15/600/400" alt="Waterfall">
+                <div class="card-overlay">
+                    <p>Flowing waterfall rushing through a green forest.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Hidden Waterfall</h3>
+                <span class="category-tag">Landscapes</span>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-card" data-category="portraits">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/91/600/400" alt="Outdoor Portrait">
+                <div class="card-overlay">
+                    <p>Candid outdoor portrait captured during golden hour.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Golden Hour</h3>
+                <span class="category-tag">Portraits</span>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-card" data-category="architecture">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/142/600/400" alt="Historic Building">
+                <div class="card-overlay">
+                    <p>Intricate detailing on a historic European cathedral.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Gothic Arch</h3>
+                <span class="category-tag">Architecture</span>
+            </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-card" data-category="landscapes">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/16/600/400" alt="Coastal View">
+                <div class="card-overlay">
+                    <p>Crashing waves against rocky coastal cliffs.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Rocky Coast</h3>
+                <span class="category-tag">Landscapes</span>
+            </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-card" data-category="portraits">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/177/600/400" alt="Close-up Portrait">
+                <div class="card-overlay">
+                    <p>Expressive close-up portrait with sharp focus.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Expression</h3>
+                <span class="category-tag">Portraits</span>
+            </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="gallery-card" data-category="architecture">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/175/600/400" alt="Bridge Architecture">
+                <div class="card-overlay">
+                    <p>Suspension bridge towering over the bay.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">The Suspension</h3>
+                <span class="category-tag">Architecture</span>
+            </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="gallery-card" data-category="landscapes">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/29/600/400" alt="Desert Dunes">
+                <div class="card-overlay">
+                    <p>Vast sand dunes glowing under the midday sun.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Desert Horizon</h3>
+                <span class="category-tag">Landscapes</span>
+            </div>
+        </div>
+
+        <!-- Item 11 -->
+        <div class="gallery-card" data-category="portraits">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/338/600/400" alt="Urban Portrait">
+                <div class="card-overlay">
+                    <p>Street style portrait against a textured brick backdrop.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Street Vibe</h3>
+                <span class="category-tag">Portraits</span>
+            </div>
+        </div>
+
+        <!-- Item 12 -->
+        <div class="gallery-card" data-category="architecture">
+            <div class="card-image-wrapper">
+                <img src="https://picsum.photos/id/188/600/400" alt="Minimalist Interior">
+                <div class="card-overlay">
+                    <p>Clean interior lines and minimalistic architectural design.</p>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Minimalist Space</h3>
+                <span class="category-tag">Architecture</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript for Filtering -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.gallery-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'grid';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
